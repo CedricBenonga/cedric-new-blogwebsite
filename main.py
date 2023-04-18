@@ -187,7 +187,7 @@ def login():
 
         # If email doesn't exist
         if not user:
-            flash("That email does not exist, please try again.")
+            flash("That email does not exist, please check it and try again.")
             return redirect(url_for('login'))
 
         # If password incorrect
@@ -248,7 +248,7 @@ def contact():
         # send an email - email and password set as environment variables.
         # NB: No need to put single or double quote around the NAME(S) or value(s) in environment variables
         my_mail = "bicprogramming@gmail.com"
-        my_password = os.environ.get('MY_PASSWORD')  # taken from gmail setting - security - App password ###
+        my_password = "yderlbqimxvcqcna"  # taken from gmail setting - security - App password ###
         # You can't use your gmail account password.
 
         with smtplib.SMTP("smtp.gmail.com") as connection:
