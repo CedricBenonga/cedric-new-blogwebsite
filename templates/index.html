@@ -35,7 +35,7 @@
 
 <!--        If user id is 1 then it's the admin, and they can see the delete button-->
             {% if current_user.id == 1: %}
-            <a href="{{url_for('confirm_delete', post_id=post.id) }}">Delete Post</a>
+            <a href="{{ url_for('confirm_delete', post_id=post.id) }}">Delete Post</a>
             {% endif %}
           </p>
         </div>

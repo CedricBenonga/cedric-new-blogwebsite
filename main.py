@@ -342,4 +342,9 @@ if __name__ == "__main__":
 # - In the Procfile only put this:   web: gunicorn main:app
 # - make sure you install gunicorn and it's in the requirements.txt like so:   gunicorn==20.1.0
 # - then commit and push your code again to github.
-# - render.com may ask you to remove unnecessary requirements in the requirements.txt (in which case it will failed to build). Then just remove, commit again, and try.
+# - render.com may ask you to remove unnecessary requirements in the requirements.txt
+# (in which case it will failed to build). Then just remove, commit again, and try.
+
+# => opening a link on a new window or new tab
+# <a target="_blank" rel="noopener noreferrer" href="http://your_url_here.html">Link</a>
+

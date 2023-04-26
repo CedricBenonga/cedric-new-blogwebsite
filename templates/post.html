@@ -11,7 +11,7 @@
             <h1>{{post.title}}</h1>
             <h2 class="subheading">{{post.subtitle}}</h2>
             <span class="meta">Posted by
-              <a href="https://www.linkedin.com/in/cedric-benonga-0179b5199/">{{post.author.name}}</a>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/cedric-benonga-0179b5199/">{{post.author.name}}</a>
               on {{post.date}}</span>
           </div>
         </div>
@@ -48,7 +48,7 @@
                       <p>{{ comment.text|safe }}</p>
                       <span class="date sub-text">{{ comment.comment_author.name }}</span>
                       {% if current_user.name == comment.comment_author.name: %}
-                        <a class="date sub-text" href="{{url_for('delete_comment', comment_id=comment.id) }}">Delete Comment</a>
+                        <a class="date sub-text" href="{{  url_for('delete_comment', comment_id=comment.id) }}">Delete Comment</a>
                       {% endif %}
                     </div>
                 </li>
